@@ -1,0 +1,248 @@
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    width: 550px;
+    object-fit: cover;
+    font-family: 'Inter', sans-serif;
+    background: grey;
+    justify-content: center;
+}
+
+/* Typography */
+h1{
+    color: #FFF;
+    text-align: justify;
+    font-size: 42.795px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 23.775px; /* 55.556% */
+    letter-spacing: -1.926px;
+    padding-top: 45px;
+}
+
+#my-watchlist{
+    color: #FFF;
+    text-align: right;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+    padding-top: 70px;
+}
+
+#my-watchlist:hover{
+    color: yellow;
+}
+
+#clear-watchlist{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-style: italic;
+    cursor: pointer;
+    display: none;
+}
+
+#clear-watchlist:hover{
+    font-weight: bold;
+}
+
+#return-index{
+    cursor: pointer;
+}
+
+#return-index:hover{
+    color: #6C1E5D;
+}
+
+/* Layout */
+header{
+    display: flex;
+    width: 550px;
+    height: 208px;
+    padding: 20px;
+    justify-content: center;
+    background: url("images/background.jpg"), lightgray 0px -158.291px / 100% 423.007% no-repeat;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+header#watchlist{
+    background: url("images/watchlist-background.jpg"), lightgray 0px -158.291px / 100% 423.007% no-repeat;
+}
+
+#search-result,
+#watchlist-result{
+    width: 550px;
+    height: auto;
+    min-height: 776px;
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    padding-top: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* form */
+.search-engine-div{
+    background-color: #1A1919;
+    display: block;
+    margin: 0;
+    padding: 5px;
+}
+
+#search-engine{
+    width: 450px;
+    height: 20px;
+    background-color: white;
+    display: flex;
+    padding: 9px 13px;
+    align-items: center;
+    flex: 1 0 0;
+    margin: 0px auto;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    z-index: -1;
+    position: static;
+}
+
+#search-bar{
+    width: 290px;
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+#search-bar:focus{
+    outline: none;
+    background-color: transparent;
+}
+
+button#search-button{
+    margin: 0 auto;
+    border: none;
+    background-color: transparent;
+    border-left: 1px solid var(--gray-300, #D1D5DB);
+    display: flex;
+    width: 120px;
+    padding: 9px 11px 9px 17px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    align-self: stretch;
+    cursor: pointer;
+}
+
+/* Search Result */
+#movie-img{
+    width: 99px;
+    height: 147.411px;
+    border-radius: 2.329px;
+}
+
+.movie-icon{
+    text-align: center;
+    font-size: 100px;
+    color: #DFDDDD;
+    padding-top: 250px;
+}
+
+p#start-exploring-message{
+    color: #DFDDDD;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+}
+
+#return-index {
+    color: #FD63F0;
+}
+
+/* Movie List Setup */
+.movie-list {
+    display: flex;
+    margin: 30px 40px;
+    border-bottom: 1px solid lightgrey;
+}
+
+#movie-details{
+    display: block;
+}
+
+#movie-name{
+    margin-left: 15px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+}
+
+#movie-title{
+    color: #000;
+    text-align: justify;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 111.111% */
+    margin-bottom: 5px;
+}
+
+#star-rating{
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    color: #FFD700;
+}
+
+#movie-rate{
+    margin-top: 25px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+#other-details{
+    display: flex;
+    margin-top: 0px;
+    margin-left: 15px;
+    justify-content: space-between;
+}
+
+#movie-watch-hours,
+#movie-genre,
+#add-to-watchlist{
+    color: #111827;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+#add-to-watchlist{
+    cursor: pointer;
+}
+
+#add-to-watchlist:hover{
+    font-weight: bold;
+    color: #FFD700;
+}
+
+#movie-description{
+    margin-top: 0px;
+    margin-left: 15px;
+    color: #6B7280;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    text-align: justify;
+}
+
+/* Links */
+#my-watchlist{
+    text-decoration: none;
+    cursor: pointer;
+}
